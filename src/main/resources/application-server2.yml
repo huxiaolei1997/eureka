@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8761/eureka
+    register-with-eureka: false
+  instance:
+    hostname: server2
+  # server 端配置关闭自我保护
+  server:
+    enable-self-preservation: false
+server:
+  port: 8762
