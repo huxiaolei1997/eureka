@@ -2,7 +2,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://server2:8762/eureka
+    # 禁止向注册中心注册自己
     register-with-eureka: false
+    # 不从 server 端获取注册信息（这个是禁止 server 把自己作为 client 从自身获取 注册信息），通过设置
+    # register-with-eureka 和 fetch-registry 为 false 来表明 自己是一个 server
+    fetch-registry: false
   instance:
     hostname: server1
   # server 端配置关闭自我保护
