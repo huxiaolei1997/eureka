@@ -1,8 +1,8 @@
 eureka:
   client:
     service-url:
-#      defaultZone: http://server2:8762/eureka
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8762/eureka
+#      defaultZone: http://localhost:8761/eureka
     # 禁止向注册中心注册自己
     register-with-eureka: false
     # 不从 server 端获取注册信息（这个是禁止 server 把自己作为 client 从自身获取 注册信息），通过设置

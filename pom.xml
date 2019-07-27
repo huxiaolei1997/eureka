@@ -52,27 +52,27 @@
 
 	<profiles>
 		<profile>
-			<id>dev</id>
+			<id>server2</id>
 			<properties>
-				<envFlag>dev</envFlag>
+				<envFlag>server2</envFlag>
 			</properties>
 		</profile>
+<!--		<profile>-->
+<!--			<id>test</id>-->
+<!--			<properties>-->
+<!--				<envFlag>test</envFlag>-->
+<!--			</properties>-->
+<!--		</profile>-->
+<!--		<profile>-->
+<!--			<id>gray</id>-->
+<!--			<properties>-->
+<!--				<envFlag>gray</envFlag>-->
+<!--			</properties>-->
+<!--		</profile>-->
 		<profile>
-			<id>test</id>
+			<id>server1</id>
 			<properties>
-				<envFlag>test</envFlag>
-			</properties>
-		</profile>
-		<profile>
-			<id>gray</id>
-			<properties>
-				<envFlag>gray</envFlag>
-			</properties>
-		</profile>
-		<profile>
-			<id>prod</id>
-			<properties>
-				<envFlag>prod</envFlag>
+				<envFlag>server1</envFlag>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
